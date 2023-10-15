@@ -1,0 +1,33 @@
+.hero {
+  display: flex;
+  flex-direction: column;
+  row-gap: 1em;
+  &__title {
+    margin-bottom: 5em;
+  }
+  &__delete {
+    color: red;
+    font-weight: bold;
+  }
+  &__bnt {
+    width: 10em;
+    padding: 0.5em;
+    border-radius: 0.3em;
+    background-color: red;
+    color: #fff;
+    cursor: pointer;
+  }
+
+  &__list {
+    // border: 0.0625rem solid #222;
+    border-radius: 0.5em;
+
+    display: flex;
+    flex-direction: column;
+    row-gap: 0.3em;
+  }
+  &__row {
+    padding: 0.5em;
+    border: 0.0625rem solid #222;
+  }
+}

@@ -1,0 +1,12 @@
+.counter {
+  display: flex;
+  align-items: center;
+
+  &__buton {
+    width: 5em;
+    height: 2em;
+    background-color: rgba(0, 0, 255, 0.331);
+    border-radius: 0.3em;
+    margin-bottom: 0.5em;
+  }
+}

@@ -1,0 +1,22 @@
+.dl {
+  padding: 1em;
+  &__td {
+  }
+  &__dd {
+    margin-bottom: 1em;
+    font-size: 1.3rem;
+    font-weight: bold;
+  }
+}
+
+.buttons {
+  display: flex;
+  gap: 1em;
+  padding: 1em;
+  &__btn {
+    background-color: lightblue;
+    padding: 0.5em 1em;
+    border-radius: 0.5em;
+    cursor: pointer;
+  }
+}

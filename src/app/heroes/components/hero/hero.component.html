@@ -1,0 +1,30 @@
+<section class="wrapper">
+  <h2>{{ name }}</h2>
+
+  <dl class="dl">
+    <td class="dl__td">Nombre:</td>
+    <dd class="dl__dd">{{ name }}</dd>
+
+    <td class="dl__td">Edad:</td>
+    <dd class="dl__dd">{{ age }}</dd>
+
+    <td class="dl__td">Método:</td>
+    <dd class="dl__dd">{{ getHeroDescription() }}</dd>
+
+    <td class="dl__td">Capitalizado:</td>
+    <dd class="dl__dd">{{ capitalizedName }}</dd>
+  </dl>
+
+  <div class="buttons">
+    <button
+      class="buttons__btn"
+      *ngIf="name !== 'Spider-Man'"
+      (click)="changeHero()"
+    >
+      Cambiar nombre
+    </button>
+    <button class="buttons__btn" *ngIf="age !== 55" (click)="changeAge()">
+      Cambiar edad
+    </button>
+  </div>
+</section>

@@ -1,0 +1,25 @@
+<section class="hero wrapper">
+  <h1 class="her__title">Listado de Héroes</h1>
+
+  <div *ngIf="deletedHero; else nothingWasDeleted">
+    <h2>
+      Héroe borradao <small class="hero__delete"> {{ deletedHero }} </small>
+    </h2>
+  </div>
+
+  <ng-template #nothingWasDeleted>
+    <h2>No ha borrado nada.</h2>
+  </ng-template>
+
+  <button
+    *ngIf="heroNames.length > 0"
+    (click)="removeLastHero()"
+    class="hero__bnt"
+  >
+    Borrar último héroe
+  </button>
+
+  <ul class="hero__list">
+    <li *ngFor="let hero of heroNames" class="hero__row">{{ hero }}</li>
+  </ul>
+</section>
