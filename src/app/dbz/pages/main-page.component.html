@@ -1,0 +1,18 @@
+<section class="wrapper">
+  <h1 class="title">DBZ Personajes</h1>
+  <hr />
+
+  <div class="content">
+    <div class="left">
+      <!---Mandamos del padre al hijo-->
+      <dbz-list [characterList]="characters"></dbz-list>
+    </div>
+
+    <div class="right">
+      <!---Mandamos/escucharmos al hijo-->
+      <dbz-add-character
+        (onNewCharacter)="onNewCharacter($event)"
+      ></dbz-add-character>
+    </div>
+  </div>
+</section>

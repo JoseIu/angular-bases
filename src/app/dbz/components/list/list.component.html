@@ -1,0 +1,15 @@
+<h2 class="list-title">Listado</h2>
+<ul class="list">
+  <li
+    *ngFor="
+      let character of characterList;
+      let i = index;
+      let isFirst = first;
+      let isLast = last
+    "
+    class="list__item"
+    [ngClass]="{ 'list__item--first': isFirst, 'list__item--last': isLast }"
+  >
+    {{ i + 1 }}. {{ character.name }} - power: {{ character.power }}
+  </li>
+</ul>

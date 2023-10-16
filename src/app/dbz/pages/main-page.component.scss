@@ -1,0 +1,21 @@
+.content {
+  padding: 0.5em;
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  gap: 2em;
+}
+.title {
+  margin-bottom: 2em;
+  text-align: center;
+  padding: 0.5em;
+  font-size: 1.3rem;
+}
+
+.left {
+  // display: flex;
+  // flex-direction: column;
+  // row-gap: 1em;
+}
+
+.right {
+}
